@@ -1,0 +1,118 @@
+/* Typography */
+@import url('./../typography/typography.css');
+
+/* Colors */
+@import url('./../colors/colors.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --p-light-red-color: hsl(0, 100%, 67%);
+    --p-orangey-yellow-color: hsl(39, 100%, 56%);
+    --p-teal-color: hsl(166, 100%, 37%);
+    --p-cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    /* Background */
+    --bg-light-slate-blue-color: hsl(252, 100%, 67%);
+    --bg-light-royal-blue-color: hsl(241, 81%, 54%);
+
+    /* Circles */
+    --c-violet-blue: hsla(256, 72%, 46%, 1);
+    --c-Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral  */
+    --n-white-color: hsl(0, 0%, 100%);
+    --n-pale-blue: hsl(221, 100%, 96%);
+    --n-light-lavender: hsl(241, 100%, 89%);
+    --n-dark-gray: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: var(--n-white-blue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--n-white-color);
+    max-width: 40rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+h1 {
+    width: 100%;
+}
+
+main section:first-of-type {
+    background-color: var(--c-violet-blue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    border-radius: 20px;
+}
+
+.result h1 {
+    text-align: center;
+    /* padding: 2rem 2rem 0 ; */
+    font-weight: 500;
+}
+
+.result-circle {
+    background-color: var(--p-cobalt-blue);
+    min-width: 12rem;
+    min-height: 12rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -1rem;
+}
+
+.number-76 {
+    /* width: 100%; */
+    color:  var(--n-white-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.result p {
+    width: 100%;
+}
+
+/* .of-100 {
+} */
+
+.great {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--n-white-color);
+} 
+
+.result-info {
+    width: 70%;
+    text-align: center;
+}
+
+main section:last-of-type {
+    background-color: var(--n-white-color);
+}
+

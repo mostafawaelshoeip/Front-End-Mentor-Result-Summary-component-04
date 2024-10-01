@@ -1,0 +1,24 @@
+/* Main colors */
+:root {
+    /* Primary */
+    --p-light-red-color: hsl(0, 100%, 67%);
+    --p-orangey-yellow-color: hsl(39, 100%, 56%);
+    --p-teal-color: hsl(166, 100%, 37%);
+    --p-cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    /* Background */
+    --bg-light-slate-blue-color: hsl(252, 100%, 67%);
+    --bg-light-royal-blue-color: hsl(241, 81%, 54%);
+
+    /* Circles */
+    --c-violet-blue: hsla(256, 72%, 46%, 1);
+    --c-Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral  */
+    --n-white-color: hsl(0, 0%, 100%);
+    --n-pale-blue: hsl(221, 100%, 96%);
+    --n-light-lavender: hsl(241, 100%, 89%);
+    --n-dark-gray: hsl(224, 30%, 27%);
+}
