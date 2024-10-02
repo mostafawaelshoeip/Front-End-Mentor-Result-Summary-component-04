@@ -6,6 +6,15 @@ body {
 }
 
 .gray-number {
+    color: var(--gray-color);
+}
+
+.bold-number {
+    font-weight: bold;
+    color: hsl(0, 2%, 24%);
+}
+
+.levender-color {
     color: var(--n-light-lavender);
 }
 

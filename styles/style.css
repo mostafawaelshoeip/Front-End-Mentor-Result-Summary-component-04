@@ -10,38 +10,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    /* Primary */
-    --p-light-red-color: hsl(0, 100%, 67%);
-    --p-orangey-yellow-color: hsl(39, 100%, 56%);
-    --p-teal-color: hsl(166, 100%, 37%);
-    --p-cobalt-blue: hsl(234, 85%, 45%);
-
-    /* Gradients */
-
-    /* Background */
-    --bg-light-slate-blue-color: hsl(252, 100%, 67%);
-    --bg-light-royal-blue-color: hsl(241, 81%, 54%);
-
-    /* Sub Background */
-    --reaction-bg-color: hsl(0, 100%, 67%, 0.1);
-    --memory-bg-color:hsl(39, 100%, 56%, 0.1);
-    --verbal-bg-color: hsl(166, 100%, 37%, 0.1);
-    --visual-bg-color: hsla(256, 72%, 46%, 0.1);
-
-    /* Circles */
-    --c-violet-blue: hsla(256, 72%, 46%, 1);
-    --c-Persian-blue: hsla(241, 72%, 46%, 0);
-
-    /* Neutral  */
-    --n-white-color: hsl(0, 0%, 100%);
-    --n-pale-blue: hsl(221, 100%, 96%);
-    --n-light-lavender: hsl(241, 100%, 89%);
-    
-    /* Button color */
-    --btn-dark-gray: hsl(224, 30%, 27%);
-}
-
 body {
     background-color: var(--n-white-blue);
     display: flex;
@@ -59,8 +27,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 0 15px 0 var(--n-light-lavender);
+    margin: 2rem;
 }
 
 h1 {
@@ -68,12 +37,11 @@ h1 {
 }
 
 main section:first-of-type {
-    background-color: var(--c-violet-blue);
-    display: flex;
+    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 35%, rgba(120, 87, 255, 1) 100%);    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-evenly;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .result h1 {
@@ -82,8 +50,7 @@ main section:first-of-type {
 }
 
 .result-circle {
-    background-color: var(--p-cobalt-blue);
-    min-width: 12rem;
+    background: linear-gradient(0deg, rgba(36, 33, 202, 0.109) 30%, rgba(78, 33, 202, 1) 80%);    min-width: 12rem;
     min-height: 12rem;
     display: flex;
     flex-flow: row wrap;
@@ -128,7 +95,7 @@ main section:last-of-type {
     grid-template-rows: 14%;
     row-gap: 10px;
     margin: 1.5rem;
-    box-shadow: 0 0 20px 0 white;
+    /* box-shadow: 0 0 20px 0 white; */
 }
 
 main .summary h1 {
@@ -187,7 +154,16 @@ main button {
     font-size: 0.9rem;
     height: 2.5rem;
 }
+
 main button:hover {
     cursor: pointer;
     background-color: var(--c-violet-blue);
+}
+
+/* Media Query  */
+@media (max-width: 375px) {
+    body {
+        font-size: 15px;
+        flex-flow: row wrap;
+    }
 }
