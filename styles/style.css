@@ -22,8 +22,8 @@ body {
 
 main {
     background-color: var(--n-white-color);
-    max-width: 45rem;
-    height: 30rem;
+    max-width: 50rem;
+    height: 31rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
