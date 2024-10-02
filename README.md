@@ -1,11 +1,7 @@
 ``` 
 
-This is a resposive result summary component.
+This is a resposive result summary component challenged by Frontend Mentor .
 
 Created on 2/10/2024.
-
-Time Taken: around 6 hours.
-Yeah it's a long period !
-
 
 ```
