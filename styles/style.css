@@ -23,6 +23,12 @@
     --bg-light-slate-blue-color: hsl(252, 100%, 67%);
     --bg-light-royal-blue-color: hsl(241, 81%, 54%);
 
+    /* Sub Background */
+    --reaction-bg-color: hsl(0, 100%, 67%, 0.1);
+    --memory-bg-color:hsl(39, 100%, 56%, 0.1);
+    --verbal-bg-color: hsl(166, 100%, 37%, 0.1);
+    --visual-bg-color: hsla(256, 72%, 46%, 0.1);
+
     /* Circles */
     --c-violet-blue: hsla(256, 72%, 46%, 1);
     --c-Persian-blue: hsla(241, 72%, 46%, 0);
@@ -31,7 +37,9 @@
     --n-white-color: hsl(0, 0%, 100%);
     --n-pale-blue: hsl(221, 100%, 96%);
     --n-light-lavender: hsl(241, 100%, 89%);
-    --n-dark-gray: hsl(224, 30%, 27%);
+    
+    /* Button color */
+    --btn-dark-gray: hsl(224, 30%, 27%);
 }
 
 body {
@@ -51,6 +59,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--n-light-lavender);
 }
 
 h1 {
@@ -68,7 +78,6 @@ main section:first-of-type {
 
 .result h1 {
     text-align: center;
-    /* padding: 2rem 2rem 0 ; */
     font-weight: 500;
 }
 
@@ -114,5 +123,71 @@ main section:first-of-type {
 
 main section:last-of-type {
     background-color: var(--n-white-color);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14%;
+    row-gap: 10px;
+    margin: 1.5rem;
+    box-shadow: 0 0 20px 0 white;
 }
 
+main .summary h1 {
+    padding: 0.5rem 0 0.4rem;
+    color: var(--btn-dark-gray);
+}
+
+ main .summary div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 0.6rem;
+    height: 3.5rem;
+}
+
+main .summary div > span:first-child {
+    font-size: 1.1rem;
+    font-weight: 650;
+    display: flex;
+}
+
+main .summary img {
+    align-self: center;
+    padding: 0 0.5rem;
+}
+
+.reaction {
+    background-color: var(--reaction-bg-color);
+    color: var(--p-light-red-color);
+}
+
+.memory {
+    color: var(--p-orangey-yellow-color);
+    background-color: var(--memory-bg-color);
+}
+
+.verbal {
+    color: var(--p-teal-color);
+    background-color: var(--verbal-bg-color);
+}
+
+.visual {
+    color: var(--c-violet-blue);
+    background-color: var(--visual-bg-color);
+}
+
+main button {
+    background-color: var(--btn-dark-gray);
+    color: var(--n-white-color);
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+    height: 2.5rem;
+}
+main button:hover {
+    cursor: pointer;
+    background-color: var(--c-violet-blue);
+}

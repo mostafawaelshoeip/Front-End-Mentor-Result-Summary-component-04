@@ -8,6 +8,7 @@ body {
 .gray-number {
     color: var(--n-light-lavender);
 }
+
 p {
     font-size: 18px;
 }

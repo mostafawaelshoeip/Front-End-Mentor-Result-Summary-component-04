@@ -20,5 +20,7 @@
     --n-white-color: hsl(0, 0%, 100%);
     --n-pale-blue: hsl(221, 100%, 96%);
     --n-light-lavender: hsl(241, 100%, 89%);
-    --n-dark-gray: hsl(224, 30%, 27%);
+    
+    /* Button color */
+    --btn-dark-gray: hsl(224, 30%, 27%);
 }
