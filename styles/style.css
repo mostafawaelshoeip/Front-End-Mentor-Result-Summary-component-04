@@ -22,7 +22,7 @@ body {
 
 main {
     background-color: var(--n-white-color);
-    max-width: 40rem;
+    max-width: 45rem;
     height: 30rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,8 +36,10 @@ h1 {
     width: 100%;
 }
 
+/* Result Card  */
 main section:first-of-type {
-    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 35%, rgba(120, 87, 255, 1) 100%);    display: flex;
+    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 35%, rgba(120, 87, 255, 1) 100%);
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-evenly;
@@ -50,7 +52,8 @@ main section:first-of-type {
 }
 
 .result-circle {
-    background: linear-gradient(0deg, rgba(36, 33, 202, 0.109) 30%, rgba(78, 33, 202, 1) 80%);    min-width: 12rem;
+    background: linear-gradient(0deg, rgba(36, 33, 202, 0.109) 30%, rgba(78, 33, 202, 1) 80%);
+    min-width: 12rem;
     min-height: 12rem;
     display: flex;
     flex-flow: row wrap;
@@ -62,8 +65,7 @@ main section:first-of-type {
 }
 
 .number-76 {
-    /* width: 100%; */
-    color:  var(--n-white-color);
+    color: var(--n-white-color);
     font-size: 3rem;
     font-weight: bold;
 }
@@ -72,8 +74,11 @@ main section:first-of-type {
     width: 100%;
 }
 
-/* .of-100 {
-} */
+.of-100 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b7b2b2bd;
+}
 
 .great {
     width: 100%;
@@ -81,13 +86,14 @@ main section:first-of-type {
     font-weight: 500;
     font-size: 1.7rem;
     color: var(--n-white-color);
-} 
+}
 
 .result-info {
-    width: 70%;
+    width: 63%;
     text-align: center;
 }
 
+/* Summary Card  */
 main section:last-of-type {
     background-color: var(--n-white-color);
     display: grid;
@@ -95,7 +101,6 @@ main section:last-of-type {
     grid-template-rows: 14%;
     row-gap: 10px;
     margin: 1.5rem;
-    /* box-shadow: 0 0 20px 0 white; */
 }
 
 main .summary h1 {
@@ -103,7 +108,7 @@ main .summary h1 {
     color: var(--btn-dark-gray);
 }
 
- main .summary div{
+main .summary div {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -113,7 +118,7 @@ main .summary h1 {
     height: 3.5rem;
 }
 
-main .summary div > span:first-child {
+main .summary div>span:first-child {
     font-size: 1.1rem;
     font-weight: 650;
     display: flex;
@@ -161,9 +166,96 @@ main button:hover {
 }
 
 /* Media Query  */
+/* Mobile Design */
 @media (max-width: 375px) {
+
     body {
         font-size: 15px;
-        flex-flow: row wrap;
+        font-weight: 500;
+        height: auto;
     }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: auto;
+        margin: 0 !important;
+    }
+
+    .result {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        row-gap: 5px;
+        padding: 10px 0;
+    }
+
+    .result-circle {
+        min-width: 8rem;
+        min-height: 8rem;
+        margin: 0;
+    }
+
+    .result-info {
+        width: 100%;
+        padding: 10px 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 1rem;
+    }
+
+    .summary {
+        margin: 0.3rem 1.5rem !important;
+        width: 100%;
+    }
+}
+
+/* Tablet Design */
+@media (min-width: 376px) and (max-width: 768px) {
+
+    body {
+        font-size: 17px;
+        font-weight: 500;
+        height: auto;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .result {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        row-gap: 10px;
+        padding: 10px 0;
+    }
+
+    .result-circle {
+        min-width: 8rem;
+        min-height: 8rem;
+        margin: 0;
+    }
+
+    .result-info {
+        width: 100%;
+        padding: 10px 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 1rem;
+    }
+
+    .summary {
+        margin: 1rem 1.5rem;
+        width: 100%;
+        height: auto;
+    }
+
 }

@@ -1,16 +1,11 @@
 ``` 
 
 This is a resposive result summary component.
-Created on 1/10/2024
 
-<!-- in 2attempts -->
-Time take: 150min 
+Created on 2/10/2024.
 
-third attempt 
-110 min
+Time Taken: around 6 hours.
+Yeah it's a long period !
 
-forth attempt 
-30 min
-just still media query and publish
 
 ```
